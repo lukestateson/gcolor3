@@ -405,10 +405,10 @@ gcolor3_color_selection_init (Gcolor3ColorSelection *colorsel)
   gcolor3_hsv_set_metrics (GCOLOR3_HSV (priv->triangle_colorsel), 174, 15);
   gtk_box_pack_start (GTK_BOX (top_hbox), vbox, FALSE, FALSE, 0);
   gtk_box_pack_start (GTK_BOX (vbox), priv->triangle_colorsel, FALSE, FALSE, 0);
-  gtk_widget_set_tooltip_text (priv->triangle_colorsel,
+  /* gtk_widget_set_tooltip_text (priv->triangle_colorsel,
                         _("Select the color you want from the outer ring. "
                           "Select the darkness or lightness of that color "
-                          "using the inner triangle."));
+                          "using the inner triangle.")); */
 
   hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
   gtk_box_pack_end (GTK_BOX (vbox), hbox, FALSE, FALSE, 0);
